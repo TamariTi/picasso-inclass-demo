@@ -3,6 +3,7 @@ body {
     padding: 0;
 }
 .container {
+    position: relative;
     display: flex;
     flex-direction: column;
     height: 100vh;
@@ -16,6 +17,19 @@ body {
     background-color: #00989d;
 }
 
+.lower img {
+    position: absolute;
+    bottom: 0;
+}
+
+.img1 {
+
+}
+
+.img2 {
+    left: 400px;
+}
+
 .upper div {
     flex-grow: 1;
     display: flex;
@@ -24,4 +38,89 @@ body {
     color: white;
     border: white 0.3rem solid;
     font-weight: bold;
+}
+
+.circle{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.circle1 {
+    background-color: #fe8888;
+    width: 30px;
+    height: 30px;
+    top: 20px;
+    left: 20px;
+    z-index: 1;
+}
+
+.circle2 {
+    background-color: #ecde3d;
+    top: 20px;
+    left: 70px;
+    z-index: 1;
+}
+
+.circle3 {
+    background-color: #fe8888;
+    width: 30px;
+    height: 30px;
+    top: 20px;
+    left: 200px;
+    z-index: 1;
+}
+
+.circle4 {
+    background-color: #fe8888;
+    width: 30px;
+    height: 30px;
+    top: 200px;
+    left: 20px;
+    z-index: 1;
+}
+
+.circle5 {
+    background-color: #ecde3d;
+    width: 30px;
+    height: 30px;
+    top: 230px;
+    left: 90px;
+    z-index: 1;
+}
+
+.circle6 {
+    background-color: #fe8888;
+    top: 250px;
+    left: 200px;
+    z-index: 1;
+}
+
+.tri {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-style: solid;
+    border-width: 0 0 0 250px;
+    height: 0;
+    z-index: 1;
+}
+
+.tri1 {
+    width: 0;
+    height: 0;
+    border-bottom: 200px solid #c9e265;
+    border-left: 100px solid transparent;
+    border-right:100px solid transparent;
+    z-index: 2;
+}
+
+.tri2 {
+    right: 150px;
+    width: 0;
+    height: 0;
+    border-bottom: 500px solid #6e8807;
+    border-left: 200px solid transparent;
+    border-right:200px solid transparent;
 }
